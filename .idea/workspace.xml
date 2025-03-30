@@ -4,9 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bd3a616d-1d31-4829-8ffc-5827bcf1074b" name="Changes" comment="">
+    <list default="true" id="bd3a616d-1d31-4829-8ffc-5827bcf1074b" name="Changes" comment="build.gradle.kts fix">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/BinaryTree.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/AbstractRedBlackTree.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/BinarySearchTree.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/BinarySearchTree.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/BinaryTreeInterface.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Nodes.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Nodes.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/RedBlackTree.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/RedBlackTree.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/kotlin/RedBlackTreeTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/RBTTest.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +29,9 @@
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
             <expand>
@@ -36,6 +47,11 @@
     </system>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectColorInfo">{
@@ -46,17 +62,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Gradle.Build Derevo.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Tests in 'org.example.BinaryTrees.test'.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.All in org.example.BinaryTrees.main.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/ars/Derevo&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Gradle.Build Derevo.executor": "Run",
+    "Gradle.Tests in 'org.example.BinaryTrees.test'.executor": "Run",
+    "JUnit.All in org.example.BinaryTrees.main.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/home/ars/IdeaProjects/appchik",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Gradle.Tests in 'org.example.BinaryTrees.test'">
     <configuration name="Tests in 'org.example.BinaryTrees.test'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
@@ -115,6 +133,15 @@
       <option name="presentableId" value="Default" />
       <updated>1743345482801</updated>
     </task>
+    <task id="LOCAL-00001" summary="build.gradle.kts fix">
+      <option name="closed" value="true" />
+      <created>1743346407605</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1743346407605</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -127,5 +154,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="build.gradle.kts fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="build.gradle.kts fix" />
   </component>
 </project>
