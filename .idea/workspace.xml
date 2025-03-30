@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bd3a616d-1d31-4829-8ffc-5827bcf1074b" name="Changes" comment="build.gradle.kts fix">
+    <list default="true" id="bd3a616d-1d31-4829-8ffc-5827bcf1074b" name="Changes" comment="final">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/BinarySearchTree.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/AbstractBinarySearchTree/BinarySearchTree.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/BinaryTree.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/BinaryTreeInterface/BinaryTree.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Nodes.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Nodes/Nodes.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/RedBlackTree.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/finalTrees/RedBlackTree.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/kotlin/RBTTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/RBTTest.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -37,6 +42,13 @@
       </state>
     </system>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Kotlin File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
@@ -67,6 +79,16 @@
     "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/kotlin/finalTrees" />
+      <recent name="$PROJECT_DIR$/src/main/kotlin/Nodes" />
+    </key>
+    <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="AbstractBinarySearchTree" />
+      <recent name="BinaryTreeInterface" />
+    </key>
+  </component>
   <component name="RunManager" selected="Gradle.Tests in 'org.example.BinaryTrees.test'">
     <configuration name="Tests in 'org.example.BinaryTrees.test'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
@@ -141,7 +163,31 @@
       <option name="project" value="LOCAL" />
       <updated>1743351651272</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="build.gradle.kts fix">
+      <option name="closed" value="true" />
+      <created>1743352134184</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1743352134184</updated>
+    </task>
+    <task id="LOCAL-00004" summary="format">
+      <option name="closed" value="true" />
+      <created>1743352283515</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1743352283515</updated>
+    </task>
+    <task id="LOCAL-00005" summary="final">
+      <option name="closed" value="true" />
+      <created>1743357279672</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1743357279672</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -157,6 +203,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="build.gradle.kts fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="build.gradle.kts fix" />
+    <MESSAGE value="format" />
+    <MESSAGE value="final" />
+    <option name="LAST_COMMIT_MESSAGE" value="final" />
   </component>
 </project>

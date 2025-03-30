@@ -1,3 +1,5 @@
+package BinaryTreeInterface
+
 interface BinaryTree<K : Comparable<K>, V> {
     fun search(key: K): V?
 
