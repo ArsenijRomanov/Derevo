@@ -1,10 +1,10 @@
 import io.kotest.assertions.throwables.shouldThrow
+import org.junit.jupiter.api.Assertions.assertNull
 import org.junit.jupiter.api.Test
 import kotlin.random.Random
-import kotlin.test.*
+import kotlin.test.assertEquals
 
 class RBTForTest<K : Comparable<K>, V> : RedBlackTree<K, V>() {
-
     fun blackRoot(): Boolean {
         return isBlack(root)
     }
@@ -133,135 +133,135 @@ class RBTTest {
 
     @Test
     fun `search test`() {
-        val Tree = RBTForTest<Int, Int>()
+        val testTree = RBTForTest<Int, Int>()
         for (i in 1..10) {
-            Tree.insert(i, i * 10)
+            testTree.insert(i, i * 10)
         }
         for (i in 1..10) {
-            assertEquals(Tree.search(i), i * 10)
+            assertEquals(testTree.search(i), i * 10)
         }
     }
 
     @Test
     fun `missing item search`() {
-        val Tree = RBTForTest<Int, Int>()
+        val testTree = RBTForTest<Int, Int>()
         for (i in 1..10) {
-            Tree.insert(i, i * 10)
+            testTree.insert(i, i * 10)
         }
-        assertNull(Tree.search(20))
+        assertNull(testTree.search(20))
     }
 
     @Test
     fun `search in empty tree`() {
-        val Tree = RBTForTest<Int, Int>()
-        assertNull(Tree.search(1))
+        val testTree = RBTForTest<Int, Int>()
+        assertNull(testTree.search(1))
     }
 
     @Test
     fun `insert test`() {
-        val Tree = RBTForTest<Int, String>()
-        Tree.insert(1, "1")
-        assertEquals(Tree.search(1), "1")
+        val testTree = RBTForTest<Int, String>()
+        testTree.insert(1, "1")
+        assertEquals(testTree.search(1), "1")
     }
 
     @Test
     fun `repetitive insertion`() {
-        val Tree = RBTForTest<Int, String>()
-        Tree.insert(1, "1")
-        assertEquals(Tree.size(), 1)
+        val testTree = RBTForTest<Int, String>()
+        testTree.insert(1, "1")
+        assertEquals(testTree.size(), 1)
     }
 
     @Test
     fun `insert random values`() {
-        val Tree = RBTForTest<Int, String>()
+        val testTree = RBTForTest<Int, String>()
         val elements: ArrayList<Int> = arrayListOf()
         repeat(100) {
             val newEl = Random.nextInt(-1000, 1000)
-            if (Tree.search(newEl) == null) {
+            if (testTree.search(newEl) == null) {
                 elements.add(newEl)
             }
-            Tree.insert(newEl, "$newEl")
+            testTree.insert(newEl, "$newEl")
         }
-        assertEquals(Tree.size(), elements.size)
+        assertEquals(testTree.size(), elements.size)
         for (i in elements)
-            assertEquals(Tree.search(i), "$i")
+            assertEquals(testTree.search(i), "$i")
     }
 
     @Test
     fun `max element`() {
-        val Tree = RBTForTest<Int, String>()
+        val testTree = RBTForTest<Int, String>()
         for (i in 1..10)
-            Tree.insert(i, "$i")
-        assertEquals(Tree.max(), 10)
+            testTree.insert(i, "$i")
+        assertEquals(testTree.max(), 10)
     }
 
     @Test
     fun `max element in empty tree`() {
-        val Tree = RBTForTest<Int, String>()
-        assertEquals(Tree.max(), null)
+        val testTree = RBTForTest<Int, String>()
+        assertEquals(testTree.max(), null)
     }
 
     @Test
     fun `min element`() {
-        val Tree = RBTForTest<Int, String>()
+        val testTree = RBTForTest<Int, String>()
         for (i in 1..10)
-            Tree.insert(i, "$i")
-        assertEquals(Tree.min(), 1)
+            testTree.insert(i, "$i")
+        assertEquals(testTree.min(), 1)
     }
 
     @Test
     fun `min element in empty tree`() {
-        val Tree = RBTForTest<Int, String>()
-        assertEquals(Tree.min(), null)
+        val testTree = RBTForTest<Int, String>()
+        assertEquals(testTree.min(), null)
     }
 
     @Test
     fun deleteTest() {
-        val Tree = RBTForTest<Int, String>()
-        Tree.insert(1, "1")
-        Tree.delete(1)
-        assertNull(Tree.search(1))
+        val testTree = RBTForTest<Int, String>()
+        testTree.insert(1, "1")
+        testTree.delete(1)
+        assertNull(testTree.search(1))
     }
 
     @Test
     fun `delete of a missing element`() {
-        val Tree = RBTForTest<Int, String>()
+        val testTree = RBTForTest<Int, String>()
         for (i in 1..5)
-            Tree.insert(i, "$i")
-        Tree.delete(10)
-        assertEquals(Tree.size(), 5)
+            testTree.insert(i, "$i")
+        testTree.delete(10)
+        assertEquals(testTree.size(), 5)
     }
 
     @Test
     fun `delete 10 elements`() {
-        val Tree = RBTForTest<Int, String>()
+        val testTree = RBTForTest<Int, String>()
         for (i in 1..10)
-            Tree.insert(i, "$i")
+            testTree.insert(i, "$i")
         for (i in 1..10)
-            Tree.delete(i)
+            testTree.delete(i)
         for (i in 1..10)
-            assertNull(Tree.search(i))
+            assertNull(testTree.search(i))
     }
 
     @Test
     fun `iteration test`() {
-        val Tree = RBTForTest<Int, String>()
+        val testTree = RBTForTest<Int, String>()
         for (i in 1..20)
-            Tree.insert(i, "$i")
+            testTree.insert(i, "$i")
         var n = 1
-        for (i in Tree) {
-            assertEquals(Tree.search(n), "$n")
+        for (i in testTree) {
+            assertEquals(testTree.search(n), "$n")
             ++n
         }
     }
 
     @Test
     fun `iteration test 2`() {
-        val Tree = RBTForTest<Int, String>()
+        val testTree = RBTForTest<Int, String>()
         for (i in 1..20)
-            Tree.insert(i, "$i")
+            testTree.insert(i, "$i")
         var n = 1
-        for (i in Tree) {
+        for (i in testTree) {
             assertEquals(i.key, n)
             assertEquals(i.value, "$n")
             ++n
@@ -270,11 +270,11 @@ class RBTTest {
 
     @Test
     fun `iteration test 3`() {
-        val Tree = RBTForTest<Int, String>()
+        val testTree = RBTForTest<Int, String>()
         for (i in 1..20)
-            Tree.insert(i, "$i")
+            testTree.insert(i, "$i")
         var n = 1
-        val iter = Tree.iterator()
+        val iter = testTree.iterator()
         while (iter.hasNext()) {
             val i = iter.next()
             assertEquals(i.key, n)
@@ -284,96 +284,96 @@ class RBTTest {
                 val j = iter.next()
                 assertEquals(j.key, 10)
                 assertEquals(j.value, "10")
-                Tree.insert(30, "30")
+                testTree.insert(30, "30")
                 break
             }
         }
 
         shouldThrow<ConcurrentModificationException> {
             if (iter.hasNext()) {
-                val i = iter.next()
+                iter.next()
             }
         }
     }
 
     @Test
     fun `insert while iterating`() {
-        val Tree = RBTForTest<Int, String>()
+        val testTree = RBTForTest<Int, String>()
         for (i in 1..10)
-            Tree.insert(i, "$i")
+            testTree.insert(i, "$i")
         shouldThrow<ConcurrentModificationException> {
-            for (i in Tree)
-                Tree.insert(100, "100")
+            for (i in testTree)
+                testTree.insert(100, "100")
         }
     }
 
     @Test
     fun `delete while iterating`() {
-        val Tree = RBTForTest<Int, String>()
+        val testTree = RBTForTest<Int, String>()
         for (i in 1..10)
-            Tree.insert(i, "$i")
+            testTree.insert(i, "$i")
         shouldThrow<ConcurrentModificationException> {
-            for (i in Tree)
-                Tree.delete(1)
+            for (i in testTree)
+                testTree.delete(1)
         }
     }
 
     @Test
     fun `black root`() {
-        val Tree = RBTForTest<Int, String>()
+        val testTree = RBTForTest<Int, String>()
         for (i in 1..10) {
-            Tree.insert(i, "$i")
-            assert(Tree.blackRoot())
+            testTree.insert(i, "$i")
+            assert(testTree.blackRoot())
         }
         val arr = arrayOf(2, 7, 6, 4, 5, 1, 9, 10, 8, 3)
         for (i in arr) {
-            Tree.delete(i)
-            assert(Tree.blackRoot())
+            testTree.delete(i)
+            assert(testTree.blackRoot())
         }
     }
 
     @Test
     fun `no red node with a red child`() {
-        val Tree = RBTForTest<Int, String>()
+        val testTree = RBTForTest<Int, String>()
         for (i in 1..100) {
-            Tree.insert(i, "$i")
-            assert(Tree.noRedNodeWithRedChild())
+            testTree.insert(i, "$i")
+            assert(testTree.noRedNodeWithRedChild())
         }
         for (i in 1..100) {
-            Tree.delete(i)
-            assert(Tree.noRedNodeWithRedChild())
+            testTree.delete(i)
+            assert(testTree.noRedNodeWithRedChild())
         }
     }
 
     @Test
     fun `same black height`() {
-        val Tree = RBTForTest<Int, String>()
+        val testTree = RBTForTest<Int, String>()
         for (i in 1..100) {
-            Tree.insert(i, "$i")
-            assert(Tree.sameBlackHeight())
+            testTree.insert(i, "$i")
+            assert(testTree.sameBlackHeight())
         }
         for (i in 1..100) {
-            Tree.delete(i)
-            assert(Tree.sameBlackHeight())
+            testTree.delete(i)
+            assert(testTree.sameBlackHeight())
         }
     }
 
     @Test
     fun `is binary seek tree`() {
-        val Tree = RBTForTest<Int, String>()
+        val testTree = RBTForTest<Int, String>()
         for (i in 1..100) {
-            Tree.insert(i, "$i")
-            assert(Tree.isBST())
+            testTree.insert(i, "$i")
+            assert(testTree.isBST())
         }
         for (i in 1..100) {
-            Tree.delete(i)
-            assert(Tree.isBST())
+            testTree.delete(i)
+            assert(testTree.isBST())
         }
     }
 
     @Test
     fun `big test`() {
-        val Tree = RBTForTest<Int, Int>()
+        val testTree = RBTForTest<Int, Int>()
         val cur: ArrayList<Int> = arrayListOf()
         var len = 0
 
@@ -382,26 +382,26 @@ class RBTTest {
             if (rand != 0 || len == 0) {
                 val newNumber = Random.nextInt(-100000, 100000)
                 if (!cur.contains(newNumber)) {
-                    Tree.insert(newNumber, 0)
+                    testTree.insert(newNumber, 0)
                     cur.add(newNumber)
                     ++len
                 }
             } else {
                 val index = Random.nextInt(0, len)
-                Tree.delete(cur[index])
+                testTree.delete(cur[index])
                 cur.removeAt(index)
                 --len
             }
 
-            assert(Tree.isRBT())
+            assert(testTree.isRBT())
         }
 
         while (!cur.isEmpty()) {
             val index = Random.nextInt(0, len)
-            Tree.delete(cur[index])
+            testTree.delete(cur[index])
             cur.removeAt(index)
             --len
-            assert(Tree.isRBT())
+            assert(testTree.isRBT())
         }
     }
 }
