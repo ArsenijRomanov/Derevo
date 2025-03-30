@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bd3a616d-1d31-4829-8ffc-5827bcf1074b" name="Changes" comment="final">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/BinarySearchTree.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/AbstractBinarySearchTree/BinarySearchTree.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/BinaryTree.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/BinaryTreeInterface/BinaryTree.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Nodes.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Nodes/Nodes.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/RedBlackTree.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/finalTrees/RedBlackTree.kt" afterDir="false" />
+    <list default="true" id="bd3a616d-1d31-4829-8ffc-5827bcf1074b" name="Changes" comment="final2">
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/AbstractBinarySearchTree/BinarySearchTree.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/BinarySearchTree.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/BinaryTreeInterface/BinaryTree.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/BinaryTree.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Nodes/Nodes.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Nodes.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/finalTrees/RedBlackTree.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/RedBlackTree.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/kotlin/RBTTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/RBTTest.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -81,10 +80,12 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/kotlin" />
       <recent name="$PROJECT_DIR$/src/main/kotlin/finalTrees" />
       <recent name="$PROJECT_DIR$/src/main/kotlin/Nodes" />
     </key>
     <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="" />
       <recent name="AbstractBinarySearchTree" />
       <recent name="BinaryTreeInterface" />
     </key>
@@ -187,7 +188,15 @@
       <option name="project" value="LOCAL" />
       <updated>1743357279672</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="final2">
+      <option name="closed" value="true" />
+      <created>1743358197457</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1743358197457</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -205,6 +214,7 @@
     <MESSAGE value="build.gradle.kts fix" />
     <MESSAGE value="format" />
     <MESSAGE value="final" />
-    <option name="LAST_COMMIT_MESSAGE" value="final" />
+    <MESSAGE value="final2" />
+    <option name="LAST_COMMIT_MESSAGE" value="final2" />
   </component>
 </project>
