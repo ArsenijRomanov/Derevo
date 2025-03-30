@@ -1,5 +1,4 @@
-open class RedBlackTree<K : Comparable<K>, V> internal constructor() :
-    BinarySearchTree<K, V, RBTNode<K, V>>() {
+open class RedBlackTree<K : Comparable<K>, V> internal constructor() : BinarySearchTree<K, V, RBTNode<K, V>>() {
     override fun insertInternal(
         key: K,
         value: V,

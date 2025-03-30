@@ -5,16 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bd3a616d-1d31-4829-8ffc-5827bcf1074b" name="Changes" comment="build.gradle.kts fix">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/BinaryTree.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/AbstractRedBlackTree.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/BinarySearchTree.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/BinarySearchTree.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/BinaryTreeInterface.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Nodes.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Nodes.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/RedBlackTree.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/RedBlackTree.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/RedBlackTreeTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/RBTTest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/kotlin/RBTTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/RBTTest.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,6 +63,7 @@
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/home/ars/IdeaProjects/appchik",
+    "run.code.analysis.last.selected.profile": "pProject Default",
     "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
@@ -141,7 +133,15 @@
       <option name="project" value="LOCAL" />
       <updated>1743346407605</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="build.gradle.kts fix">
+      <option name="closed" value="true" />
+      <created>1743351651272</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1743351651272</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

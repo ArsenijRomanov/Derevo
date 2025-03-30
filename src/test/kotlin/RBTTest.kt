@@ -130,7 +130,6 @@ class RBTForTest<K : Comparable<K>, V> : RedBlackTree<K, V>() {
 }
 
 class RBTTest {
-
     @Test
     fun `search test`() {
         val testTree = RBTForTest<Int, Int>()
