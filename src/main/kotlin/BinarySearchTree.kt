@@ -1,6 +1,5 @@
 abstract class BinarySearchTree<K : Comparable<K>, V, T : Node<K, V, T>> :
     BinaryTree<K, V>, Iterable<T> {
-    private var isIterating = false
     private var modCnt: Long = 0
     protected var root: T? = null
 
@@ -73,7 +72,6 @@ abstract class BinarySearchTree<K : Comparable<K>, V, T : Node<K, V, T>> :
         val nodes = ArrayDeque<T>()
 
         init {
-            isIterating = true
             addLeft(root)
         }
 
