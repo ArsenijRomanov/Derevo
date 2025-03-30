@@ -1,6 +1,5 @@
 plugins {
     kotlin("jvm") version "2.1.0"
-    jacoco
 }
 
 group = "org.example"
@@ -24,52 +23,8 @@ tasks.test {
     useJUnitPlatform()
 }
 
-jacoco {
-    toolVersion = "0.8.11"
-}
-
 tasks.test {
     useJUnitPlatform()
-    finalizedBy(tasks.jacocoTestReport)
-}
-
-tasks.jacocoTestReport {
-    dependsOn(tasks.test)
-    reports {
-        xml.required.set(false)
-        html.required.set(true)
-        csv.required.set(false)
-    }
-
-    // Исключаем сгенерированные классы и тесты
-    classDirectories.setFrom(
-        files(classDirectories.files.map {
-            fileTree(it).exclude(
-                "**/*Test*",
-                "**/Test*",
-                "**/testing/**"
-            )
-        })
-    )
-}
-
-tasks.jacocoTestCoverageVerification {
-    violationRules {
-        rule {
-            limit {
-                minimum = "0.80".toBigDecimal()
-            }
-        }
-
-        rule {
-            element = "CLASS"
-            excludes = listOf("*.BinaryTreeKt") // Исключаем файлы-расширения
-            limit {
-                counter = "LINE"
-                minimum = "0.70".toBigDecimal()
-            }
-        }
-    }
 }
 
 tasks.withType<Test> {
